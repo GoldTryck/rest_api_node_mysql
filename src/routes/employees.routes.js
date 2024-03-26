@@ -13,6 +13,6 @@ const router = Router()
 router.get('/employees', getEmployees)
 router.get('/employees/:id', getEmployee)
 router.post('/employees', createEmployees)
-router.put('/employees', updateEmployees)
+router.patch('/employees/:id', updateEmployees) //Patch actualiza parcialmente //Put actualiza todos los datos
 router.delete('/employees/:id', deleteEmployees)
 export default router
